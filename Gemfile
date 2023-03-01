@@ -38,6 +38,9 @@ gem "require_all", "~> 3.0"
 group :development do
   gem "pry", "~> 0.14.1"
 
+## Used to generate seed data
+   gem 'faker', '~> 1.6', '>= 1.6.3'
+
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
   gem "rerun"
