@@ -1,7 +1,7 @@
-puts "🌱 Seeding spices..."
+puts "🌱 Seeding projects..."
 
 # Seed your database here
-    # create a game with random data
+    # create projects with random data
     moringa = Client.create(
       name: "Moringa"
     )
@@ -25,14 +25,14 @@ puts "🌱 Seeding spices..."
         title: "Labor Management",
         completion: rand(1..100),
         comment: Faker::Lorem.sentence,
-        client_id: twiga.id # use the ID (primary key) of the game as the foreign key
+        client_id: twiga.id # use the ID (primary key) of the client as the foreign key
       )
 
       Project.create(
         title: "Pesticide log",
         completion: rand(1..100),
         comment: Faker::Lorem.sentence,
-        client_id: twiga.id # use the ID (primary key) of the game as the foreign key
+        client_id: twiga.id # use the ID (primary key) of the client as the foreign key
       )
   
 
@@ -40,7 +40,7 @@ puts "🌱 Seeding spices..."
         title: "Mix Calculator",
         completion: rand(1..100),
         comment: Faker::Lorem.sentence,
-        client_id: cosmo.id # use the ID (primary key) of the game as the foreign key
+        client_id: cosmo.id # use the ID (primary key) of the client as the foreign key
       )
   
 
