@@ -44,6 +44,9 @@ class ApplicationController < Sinatra::Base
   patch "/projects/:id" do
     projects = Project.find(params[:id])
     projects.update()
+    title:params[:title],
+      completion:params[:completion],
+      comment:params[:comment]
   end
 
 

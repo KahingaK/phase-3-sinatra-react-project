@@ -37,6 +37,7 @@ And the user should be redirected to the main page
 
 ## Requirements
 
+
 To run this application, you will need:
 
 Ruby installed on your system
@@ -55,7 +56,9 @@ SESSION_SECRET=<your session secret>
 DATABASE_URL=<your SQL database URL>
 Run rake db:migrate to create the necessary database tables.
 Run ruby app.rb to start the application.
-Open your web browser and navigate to http://localhost:9292 to view the application.
+Open your web browser and navigate to http://localhost:9292/projects to view the application.
+
+Run the react frontend from https://github.com/KahingaK/phase-3-sinatra-react-project-Frontend
 
 ## Usage
 
